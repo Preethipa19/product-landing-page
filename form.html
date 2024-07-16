@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> form</title>
+</head>
+<body bgcolor="grey" >
+
+    <style>
+        /* Reset some basic elements */
+body, h1, h3, h4, p, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    background-image: url("./img/restaurant.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Centering the form and setting a width */
+.testbox {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1, form h3, form h4, form p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Styling the input fields and textarea */
+input[type="text"], input[type="date"], input[type="time"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-block {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #f2f2f2;
+}
+
+.first-col {
+    text-align: left;
+    font-weight: bold;
+    width: 20%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testbox {
+        width: 90%;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .first-col {
+        width: 100%;
+    }
+}
+
+    </style>
+    <div class="testbox">
+        <form action="/">
+            <center><h1><p>FEEDBACK FORM</p></h1><br /></center>
+            <p>Please help us improve our  services by filling in our feedback form. Thank you!</p><br />
+            <h4><p>Name</p></h4><br />
+            <div class="name">
+                <input type="text" name="name" placeholder="First" />
+                <input type="text" name="name" placeholder="Last" />
+
+            </div>
+            <br />
+            <h3><p>Email</p></h3><br />
+            <input type="text" name="name" />
+            <br /><br />
+            <h3><p>Location You Visited<span>*</span></p></h3><br />
+            <select>
+                <option class="disabled" value="location" disabled selected>*Please Select*</option>
+                <option value="1">chennai</option>
+                <option value="2">coimbatore</option>
+                <option value="3">Trichy</option>
+                <option value="4">Hyderabad </option>
+                <option value="5">Bangalore</option>
+            </select>
+            <br />
+            <br />
+            <h3><p>Day Visited<span>*</span></p></h3><br />
+            <div class="day-visited">
+                <input type="date" name="dayvisited" required />
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <br />
+            <h3><p>Time Visited<span>*</span></p></h3><br />
+            <div class="time-visited">
+                <input type="time" name="timevisited" required />
+                <i class="fas fa-clock"></i>
+            </div>
+            <br />
+            <h3><p>Dine In / Take Out</p></h3>
+            <div class="question-answer">
+                <label><input type="radio" value="none" name="Dine" /> <p>Dine In</p></label>
+                <label><input type="radio" value="none" name="Dine" /><p> Take Out</p></label>
+                <br /><br />
+            </div>
+            <h3><p>Age<span>*</span></p></h3>
+            <select>
+                <option class="disabled" value="location" disabled selected>*Please Select*</option>
+                <option value="under 13">Under 13</option>
+                <option value="13-17">13-17</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55 or older">55 or older</option>
+                <br />
+                <br />
+            </select>
+
+            <h3><p>Ratings</p></h3><br /><br />
+            <table>
+            <table>
+                <tr>
+                    <th class="first-col"></th>
+                    <th><p>Amazing </p></th>
+                    <th><p>Good </p></th>
+                    <th><p>Decent </p></th>
+                    <th><p>Disappointing</p></th>
+                </tr>
+
+                <tr>
+
+                    <td class="first-col"><p>Food Quality</p></td></font>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col"><p>Overall Service Quality </p></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col"><p>Speed of Service </p></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col"><p>Price</p></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col"><p>Overall Experience</p></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                </tr>
+            </table>
+            
+                </table>
+            <h4> <p>Any comments, questions or suggestions?</p></h4>
+            <textarea rows="5"></textarea>
+            <div class="btn-block">
+                <button type="submit" href="/">Send Feedback</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
