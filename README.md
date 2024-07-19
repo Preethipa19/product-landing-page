@@ -3,12 +3,11 @@ Welcome to FoodoFeast, your ultimate destination for online food delivery and di
 
 ## Table of Contents
 
-Features
-Technologies Used
-File Structure
-Getting Started
-
-License
+# Features
+# Technologies Used
+# File Structure
+# Getting Started
+# License
 
 
 ## Features
